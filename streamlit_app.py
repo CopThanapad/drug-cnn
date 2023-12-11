@@ -5,7 +5,7 @@ from prediction import pred_class
 import numpy as np
 
 # Set title 
-st.title('Microplastic Classification')
+st.title('Drug Classification')
 
 #Set Header 
 st.header('Please up load picture')
@@ -24,7 +24,7 @@ if uploaded_image is not None:
     image = Image.open(uploaded_image).convert('RGB')
     st.image(image, caption='Uploaded Image', use_column_width=True)
     
-    class_name = ['Fiber', 'Film', 'Fragment', 'Pellet']
+    class_name = ['Alaxan', 'Bactidol', 'Decolgen', 'FishOil', 'KremilS']
 
     if st.button('Prediction'):
         #Prediction class
